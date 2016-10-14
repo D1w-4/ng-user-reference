@@ -1,0 +1,16 @@
+{
+  "data":[
+    {
+      "name":"Дмитрий",
+      "surname":"Михайлов",
+      "passport_issue_date":"Mon Aug 23 1988 00:00:00 GMT+0500 (YEKT)",
+      "in_groups":[1,2,3]
+    },
+    {
+      "name":"Никита",
+      "surname":"Кабыжаков",
+      "passport_issue_date":"Mon Jan 11 1984 00:00:00 GMT+0500 (YEKT)",
+      "in_groups":[1,3]
+    }
+  ]
+}

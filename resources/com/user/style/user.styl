@@ -1,0 +1,14 @@
+@import "~variables.styl"
+.user-block
+  padding 8px 16px
+  border-bottom 1px solid $clr-grey-100
+  background-color $clr-white-list
+  cursor: pointer
+  transition transform 0.2s ease-in-out 0.1s,background 0.2s ease-in-out 0s
+  &:hover
+    transform: perspective(150px) rotateX(2deg) translateY(2px);
+    background-color $clr-green-100
+.user-block__username
+  font-weight 700
+  font-size 16px
+  color $clr-grey-700

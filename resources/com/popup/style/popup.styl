@@ -1,0 +1,59 @@
+@import "~variables.styl"
+.popup
+  position fixed
+  top: 0
+  left: 0
+  width 100%
+  height 100%
+  overflow auto
+  background-color rgba(0, 0, 0, 0.3)
+  text-align center
+  &:before
+    content: ""
+    display inline-block
+    height 100%
+    vertical-align middle
+
+.popup__container
+  position relative
+  margin 0 32px
+  min-width 400px
+  display inline-block
+  border-radius 0 0 4px 4px
+  text-align left
+  vertical-align middle
+
+.popup__head
+  border-radius 4px 4px 0 0
+  background-color $clr-green-400
+  min-height 32px
+
+.popup__close
+  display inline-block
+  width 32px
+  height 32px
+  vertical-align middle
+  font-size 24px
+  text-align center
+  color $clr-white-list
+  cursor pointer
+  opacity 0.5
+  float: right
+  &:hover
+    opacity 1
+  &:before
+    content: ""
+    height 100%
+    vertical-align middle
+    display inline-block
+  &:after
+    content: "×"
+    display inline-block
+    vertical-align middle
+
+.popup__content
+  padding 16px
+  background-color $clr-white-list
+
+body.popup_open
+  overflow hidden

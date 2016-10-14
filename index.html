@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="app">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta charset="UTF-8">
+    <title>ng-user-reference</title>
+    <link rel="stylesheet" href="assets/css/main.css">
+</head>
+<body>
+<header>
+    <nav class="navbar">
+        <div class="navbar__item" ui-sref-active="active"><a ui-sref="users">Лица</a></div>
+    </nav>
+</header>
+<nav-area></nav-area>
+<section class="main-container" ui-view>
+</section>
+<footer class="footer">
+    <address>
+        <div class="footer__item">Дмитрий Михайлов</div>
+        <a class="footer__item" href="mailto:mvk56@mail.ru">mvk56@mail.ru</a>
+        <a class="footer__item" href="tel:+79326099536">+7 932-609-05-36</a>
+    </address>
+</footer>
+<script src="bower_components/angular/angular.min.js"></script>
+<script src="bower_components/angular-ui-router/release/angular-ui-router.min.js"></script>
+<script src="assets/js/app.js"></script>
+</body>
+</html>

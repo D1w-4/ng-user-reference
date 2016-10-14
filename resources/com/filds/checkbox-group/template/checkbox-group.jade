@@ -1,0 +1,5 @@
+label.fild-label(ng-transclude="fild-label")
+div.fild-checkbox-group(ng-repeat="group in $ctrl.groups" ng-init="key=$index+1")
+    label.fild-checkbox-group__item
+        input(type="checkbox" value="key" ng-checked="$ctrl.checked[key]" ng-model="$ctrl.checked[key]" ng-change="$ctrl.setValue(key)")
+        span {{group.title}}

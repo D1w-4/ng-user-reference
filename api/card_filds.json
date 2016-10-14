@@ -1,0 +1,37 @@
+{
+  "order": [
+    "name",
+    "surname",
+    "passport_issue_date",
+    "in_groups"
+  ],
+  "meta": {
+    "name": {
+      "type": "text",
+      "title": "Имя"
+    },
+    "surname": {
+      "type": "text",
+      "title": "Фамилия"
+    },
+    "passport_issue_date":{
+      "type":"date",
+      "title":"Дата выдачи паспорта"
+    },
+    "in_groups": {
+      "type": "checkboxgroup",
+      "title": "Входит в группы",
+      "items": [
+        {
+          "title": "Менеджеры"
+        },
+        {
+          "title": "Бухгалтеры"
+        },
+        {
+          "title": "На испытательном строке"
+        }
+      ]
+    }
+  }
+}

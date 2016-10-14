@@ -1,0 +1,9 @@
+div.user-card
+   div.fild-list
+      div.fild-list__item(ng-repeat="(key,fild) in $ctrl.userFild.meta")
+         fild-input(value="$ctrl.user[key]" ng-if="fild.type=='text'")
+            fild-label {{fild.title}}
+         fild-checkbox-group(value="$ctrl.user[key]" groups="fild.items" ng-if="fild.type == 'checkboxgroup'")
+            fild-label {{fild.title}}
+         fild-date(value="$ctrl.user[key]" ng-if="fild.type=='date'")
+            fild-label {{fild.title}}

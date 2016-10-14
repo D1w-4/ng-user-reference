@@ -1,0 +1,4 @@
+h1 Список лиц
+user(ng-repeat="user in $resolve.users.all()" id="{{user.id}}" navtitle="user.surname+' '+user.name.substring(0,1)+'.'")
+    user-name {{user.surname}} {{user.name}}
+    issue-date {{user.issue_date}}
